@@ -1,0 +1,44 @@
+{
+  "name": "xrplmarket-backend",
+  "version": "0.0.1",
+  "description": "xrplmarket backend implementation",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src|bunyan -o short",
+    "dev": "nodemon src/index.js",
+    "lint": "eslint --fix src",
+    "test": "mocha --exit"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "dependencies": {
+    "perf_hooks": "^0.0.1",
+    "mongodb": "^4.5.0",
+    "lodash": "^4.17.21",
+    "cors": "^2.8.5",
+    "dotenv": "^15.0.0",
+    "express": "^4.17.2",
+    "helmet": "^5.0.2",
+    "morgan": "^1.10.0",
+    "xrpl": "^2.1.1",
+    "yup": "^0.32.9",
+    "ws": "^8.4.2",
+    "bunyan": "^1.8.15",
+    "payid-lib": "^0.1.0",
+    "axios": "^0.25.0",
+    "ioredis": "^4.28.5",
+    "crypto-js": "^4.1.1",
+    "node-schedule": "^2.1.0",
+    "xrpl-tagged-address-codec": "^0.2.1",
+    "ripple-address-codec": "^4.2.3",
+    "bignumber.js": "^9.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.8.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4",
+    "mocha": "^9.2.0",
+    "nodemon": "^2.0.15",
+    "supertest": "^6.2.2"
+  }
+}
